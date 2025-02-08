@@ -184,3 +184,30 @@ body.light-mode {
     z-index: 9999;
     transition: opacity 0.5s;
 }
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 15px;
+    font-size: 1.5rem;
+    background: var(--hover-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTop:hover {
+    background: #003d80;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #scrollToTop {
+        bottom: 15px;
+        right: 15px;
+        font-size: 1.2rem;
+    }
+}

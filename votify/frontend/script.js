@@ -122,3 +122,21 @@ function showAnswer(button) {
       answerBox.style.animation = ""; // Reapply fadeIn animation
   }, 10); // Allow repaint
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollBtn = document.createElement("button");
+  scrollBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>'; // FontAwesome icon
+  scrollBtn.id = "scrollToTop";
+  document.body.appendChild(scrollBtn);
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+      scrollBtn.style.display = "block"; // Show button on scrolling
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  scrollBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
