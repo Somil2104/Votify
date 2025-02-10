@@ -1,129 +1,108 @@
-/* styles.css */
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Full height of the viewport */
-}
-
-header {
-  /* Header styling */
-}
-
-main {
-  flex: 1; /* Take the remaining space */
-  /* Main content styling */
-}
-
 .footer {
-  background-color: var(--secondary-color);
-  color: var(--tertiary-text-color);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2.2rem 0rem; /* Adjusted padding */
-}
-
-.footer-left, .footer-right {
-  margin: 0;
-  flex: 0 0 auto;
-}
-
-.footer-logo, .footer-wordmark {
-  width: auto;
-  height: auto;
-}
-
-.footer-middle {
+  background: linear-gradient(135deg, #2c2b2b, #2d2d2d); /* Dark background */
+  padding: 2rem 2rem 1rem;
+  position: relative;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   text-align: center;
-  flex: 1;
-  max-width: 600px;
+  color: #fff; /* Light text color for dark background */
 }
 
-.footer-middle h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-middle h1 {
+  color: #4a90e2; /* Keep the header color */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .footer-middle p {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #ccc; /* Light gray text for better readability on dark background */
 }
 
 .footer-buttons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin: 1rem 0;
 }
 
-.footer-buttons a {
-  background-color: var(--secondary-button-color);
-  color: var(--text-color);
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.footer-button {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   text-decoration: none;
-}
-
-.footer-buttons a:hover {
-  background-color: var(--primary-button-color);
-}
-
-.footer-middle p:last-of-type {
+  color: #fff;
+  background: linear-gradient(135deg, #4a90e2, #2ecc71);
+  transition: transform 0.3s ease;
   font-size: 0.9rem;
-  margin-top: 1.5rem;
 }
 
-.footer-right {
+.footer-button:hover {
+  transform: translateY(-2px);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444; /* Darker border for dark background */
+  color: #ccc; /* Light gray text for better readability */
+  font-size: 1rem; /* Increased font size */
+}
+
+.copyright-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.copyright-logo {
+  max-width: 80px;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: transparent; /* Transparent background */
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: #fff; /* White icons */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
-@media (max-width: 768px) {
-  .footer {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-  }
-
-  .footer-left, .footer-right {
-      width: auto;
-      text-align: center;
-  }
-
-  .footer-middle {
-      max-width: 100%;
-      text-align: center;
-  }
+.social-icon:hover {
+  transform: scale(1.25); /* Slightly scale up on hover */
+  color: #fff; /* Keep text color white */
+  background: transparent; /* Keep background transparent */
 }
 
-@media (max-width: 480px) {
-  .footer-middle h3 {
-      font-size: 1.2rem;
-  }
+/* Brand-specific hover colors */
+.social-icon:hover.fa-twitter {
+  color: #1da1f2; /* Twitter brand color */
+}
 
-  .footer-middle p {
-      font-size: 0.9rem;
-  }
+.social-icon:hover.fa-linkedin {
+  color: #0077b5; /* LinkedIn brand color */
+}
 
-  .footer-buttons button {
-      padding: 0.6rem 1rem;
-      font-size: 0.9rem;
-  }
+.social-icon:hover.fa-github {
+  color: #6cc644; /* GitHub brand color */
 }

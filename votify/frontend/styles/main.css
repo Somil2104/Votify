@@ -190,7 +190,7 @@ body.light-mode {
     right: 20px;
     padding: 12px 15px;
     font-size: 1.5rem;
-    background: var(--hover-color);
+    background: linear-gradient(135deg, #4a90e2, #2ecc71);
     color: white;
     border: none;
     border-radius: 8px;
@@ -200,7 +200,7 @@ body.light-mode {
 }
 
 #scrollToTop:hover {
-    background: #003d80;
+    background: var(--hover-color);
     transform: scale(1.1);
 }
 

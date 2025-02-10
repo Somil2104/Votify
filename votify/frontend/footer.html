@@ -3,252 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .footer {
-            background: linear-gradient(135deg, #f8f9fa, #ffffff);
-            padding: 2rem 2rem 1rem;
-            position: relative;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            gap: 1.5rem;
-        }
-
-        .footer-left {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .footer-logo {
-            max-width: 120px;
-            height: auto;
-            margin-bottom: 0.5rem;
-            transition: transform 0.3s ease;
-        }
-
-        .footer-logo:hover {
-            transform: scale(1.05);
-        }
-
-        .footer-middle {
-            text-align: center;
-        }
-
-        .footer-middle h3 {
-            color: var(--primary-color, #4a90e2);
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .footer-middle p {
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .footer-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .footer-button {
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            text-decoration: none;
-            color: #fff;
-            background: linear-gradient(135deg, var(--primary-color, #4a90e2), var(--secondary-color, #2ecc71));
-            transition: transform 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .footer-button:hover {
-            transform: translateY(-2px);
-        }
-
-        .footer-right {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        .footer-wordmark {
-            max-width: 80px;
-            height: auto;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 0.75rem;
-            margin-top: 0.75rem;
-        }
-
-        .social-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary-color, #4a90e2);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .social-icon:hover {
-            transform: translateY(-2px);
-        }
-
-        .footer-links {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin: 1rem 0;
-            font-size: 0.9rem;
-        }
-
-        .footer-links-column h4 {
-            color: var(--primary-color, #4a90e2);
-            margin-bottom: 0.5rem;
-            font-size: 1rem;
-        }
-
-        .footer-links-column ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-links-column li {
-            margin-bottom: 0.25rem;
-        }
-
-        .footer-links-column a {
-            color: var(--text-secondary, #666);
-            text-decoration: none;
-            transition: color 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        .footer-links-column a:hover {
-            color: var(--primary-color, #4a90e2);
-        }
-
-        .copyright {
-            text-align: center;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
-            color: var(--text-secondary, #666);
-            font-size: 0.8rem;
-        }
-
-        [data-theme="dark"] {
-            .footer {
-                background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
-            }
-            .footer-middle h3,
-            .footer-links-column h4 {
-                color: var(--primary-color, #4a90e2);
-            }
-            .footer-links-column a,
-            .copyright {
-                color: #a0a0a0;
-            }
-            .social-icon {
-                background: #2d2d2d;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .footer-container {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 1rem;
-            }
-            .footer-left,
-            .footer-right {
-                align-items: center;
-            }
-            .footer-links {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
 </head>
 <body>
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-left">
-                <img src="./assets/Votify_Logo.png" alt="Votify Logo" class="footer-logo" />
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-
             <div class="footer-middle">
-                <h3>Engage. Vote. Evolve.</h3>
-                <p>Votify empowers event organizers with real-time polling solutions.</p>
+                <h1>Engage. Vote. Evolve.</h1>
+                <p>Votify empowers event organizers with real-time polling solutions to enhance audience engagement and ensure fair, exciting competitions.</p>
                 
-                <div class="footer-links">
-                    <div class="footer-links-column">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-poll"></i> Features</a></li>
-                            <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links-column">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-book"></i> Docs</a></li>
-                            <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-users"></i> About</a></li>
-                            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-buttons">
+                    <a href="/create.html" class="footer-button">CREATE A POLL</a>
+                    <a href="/help.html" class="footer-button">HELP</a>
+                    <a href="/join.html" class="footer-button">JOIN A POLL</a>
                 </div>
-            </div>
-
-            <div class="footer-right">
-                <img src="./assets/Votify-wordmark-vertical.png" alt="Votify Wordmark Vertical" class="footer-wordmark" />
             </div>
         </div>
-
         <div class="copyright">
-            <p>© 2025 Votify. All Rights Reserved.</p>
+            <div class="copyright-content">
+                <div class="logo">
+                    <i class="fas fa-vote-yea"></i>
+                    VOTIFY
+                </div>
+                <p>© 2025 Verify. All Rights Reserved</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter fa-xl"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin fa-xl"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github fa-xl"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
-
-    <script>
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        document.body.setAttribute('data-theme', currentTheme);
-        
-        document.querySelectorAll('.footer-social a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const platform = e.currentTarget.querySelector('i').classList[1].split('-')[1];
-                console.log(`Shared on ${platform}`);
-            });
-        });
-    </script>
 </body>
 </html>
